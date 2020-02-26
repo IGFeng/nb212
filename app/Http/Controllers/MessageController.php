@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class MessageController extends Controller{
     public function index(){
-        $messages=message::orderBy('settop','desc')->orderBy('id','desc')->paginate(5);
+        $messages=message::orderBy('settop','desc')->orderBy('id','desc')->paginate(7);
         return view('index',[
             'messages'=>$messages
         ]);

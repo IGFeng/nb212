@@ -353,9 +353,10 @@
     }
 
     .pagination{
-        margin-top: 10px;
-        margin-left: 45%;
-        width:1000px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
     }
     .pagination li{
         list-style-type: none;

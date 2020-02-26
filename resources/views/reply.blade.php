@@ -13,7 +13,7 @@
            <textarea name="content" cols="70" rows="9" id="reply_content">{{$content->content}}</textarea>
                   <div id="reply_adv"><span style="color:#6a8caf;font-weight:600">管理员</span>回复的内容:</div>
                   <textarea name="reply" cols="50" rows="6" id="reply_textarea">{{$content->reply}}</textarea><br>
-                  <input type="submit"  value="回复" style="cursor:pointer" id="reply_submit">
+                  <input type="submit"  value="回复" style="cursor:pointer" id="reply_submit" style="cursor:pointer">
     </form>
     </div>
 </div>

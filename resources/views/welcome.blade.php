@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>留言板-心系武汉</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -67,14 +67,14 @@
         <div class="flex-center position-ref full-height">
             <div class="content">
                 <div class="title m-b-md">
-                  留言板
+                  武汉加油
                 </div>
 
                 <div class="links">
                     <a href="{{url('index')}}">浏览留言</a>
                     <a href="{{url('add')}}">签写留言</a>
                     <a href="{{url('login')}}">登陆</a>
-                    <a href="{{url('register')}}">注册</a>
+                    <a href="{{url('trans')}}">注册</a>
                 </div>
             </div>
         </div>

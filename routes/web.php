@@ -18,7 +18,7 @@ Route::get('/',function(){
 });
 Route::get('add',['uses'=>'MessageController@add']);
 Route::get('login',['uses'=>'UserController@login']);
-Route::post('register',['uses'=>'UserController@register']);
+Route::any('register',['uses'=>'UserController@register']);
 Route::post('edit/{id}',['uses'=>'MessageController@edit']);
 Route::post('create',['uses'=>'MessageController@create']);
 Route::get('trans',['uses'=>'UserController@trans']);
