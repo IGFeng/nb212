@@ -8,7 +8,12 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+        <link type="text/css" href="./materialize.min.css" rel="stylesheet">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js">
+        </script>
+        <script type="text/javascript" src="materialize.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="./css.css" rel="stylesheet">
         <!-- Styles -->
         <style>
             html, body {
@@ -61,6 +66,9 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            body{
+                background-image:url("pictures/大桥.png");
+            }
         </style>
     </head>
     <body>
@@ -76,7 +84,13 @@
                     <a href="{{url('login')}}">登陆</a>
                     <a href="{{url('trans')}}">注册</a>
                 </div>
+                <hr>
+                <p style="color:ghostwhite;">Design by 212</p>
+            </div>
+            <div id="typeword">
+                <h3>坚持才是胜利，武汉加油，奥利给!!</h3>
             </div>
         </div>
+        <div class="hiddendiv common"></div>
     </body>
 </html>
