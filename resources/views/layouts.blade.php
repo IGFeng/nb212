@@ -32,7 +32,7 @@
         @show
         @section('footer')
         <div id="foot">
-            @2020 Design by 212
+            @2020 Designed by 212
             </div>
         @show
 </body>
