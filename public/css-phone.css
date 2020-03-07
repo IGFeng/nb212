@@ -1,0 +1,287 @@
+    /*lzx尝试适配手机端*/
+    @media screen and (max-width:960px) {
+        html,body {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            margin: 0;/*页面只显示左上部分的margin原因是什么*/
+            padding: 0;/*页面只显示左上部分的padding原因是什么*/
+            font:12px 'Nunito',sans-serif;
+            color:#625F5F;
+            background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+            background-size: 100% 100%;
+            background-attachment:fixed;
+        }
+        #main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+
+
+        #top{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            margin: 0;
+            padding: 15px 0 0 0;
+            top: 0;
+            background-color:transparent;
+            }
+        #logoarea{
+                display: flex;
+                justify-content: center;
+                margin: 0;
+                padding: 0 0 15px 0;
+                border-bottom: 1px solid grey;
+                }
+        #logoarea a{
+                font-size: 18px;
+                letter-spacing: 3px;
+            }
+        #menu ul{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                list-style: none;
+                margin: 0;
+                padding: 3px 0;
+        }/*没有搬运li的样式*/
+        #foot {
+            position: absolute;
+            bottom: 0;
+            margin: 0;
+            padding: 0 0 15px 0;
+            text-align:center;
+            }
+
+
+        #list{
+            display: flex;
+            flex-direction: column wrap;
+            justify-content: center;
+            align-content: space-around;
+            margin: 0 5px;
+            padding: 15px 10px;
+            background-color: #FFF;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,.08);
+        }/*没有搬运listmain的样式*/
+
+        #listmain h2{
+                display: flex;
+                flex-flow: column wrap;
+                font:12px Verdana;
+                color:#4f98ca;
+
+
+                margin: 0;
+                padding:0;
+                font-weight: lighter;
+            }
+        .leftarea {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                margin: 5px 0;
+                padding: 0;
+                background:#F4FAFF;
+                font-size: 14px;
+        }
+        .midarea {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                font-size: 12px;
+                width:140px;
+                text-align:right;
+        }
+        .content{
+                margin: 0 0 5px 0;
+                padding: 0;
+                word-wrap: break-word;
+                font-weight: lighter;
+        }
+        .reply{
+                /* margin-left:65px; */
+                margin: 10px 0 0 0;
+                padding: 0 0 0 15px;
+                color: #5d6e8b;
+                font-weight: light;
+                word-wrap:break-word;
+        }/*这个地方没办法救了：#text的居中问题*/
+        .reply p{
+                background-color: #f1f9f9;
+                margin: 5px 0;
+                padding: 0;
+                font-size: 14px;
+        }
+
+
+          /* lzx */
+    #submit {
+        /* background-color: #F0F8FF; */
+        /* padding: 13px 13px 13px 13px; */
+        /* border-radius: 15px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+        }
+
+        /* lzx */
+        #list{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            align-content: space-around;
+        padding:13px 13px 3px 13px;
+        /* background-color: #F0F8FF; */
+        background-color: #FFF;
+        border-radius: 15px;
+        box-shadow: 0 0 14px 0 rgba(0,0,0,.08);
+        }
+
+        #submit img{
+        margin-left:8px;
+        }
+        /* #submit_div {
+        width:320px;
+        margin:0 0;
+        padding:22px;
+        } */
+
+        #submit_set_left {
+        width:120px;
+        margin-left:50px;
+        text-align:center;
+        float:left;
+        }
+
+        #submit_set_left ul{
+        margin:0px;
+        }
+
+        #submit_set_left li {
+        list-style:none;
+        line-height:38px;
+        background:url(../images/class_folder.gif) no-repeat left 12px;
+        }
+
+        #submit_set_right {
+        width:442px;
+        float:left;
+        }
+
+        #listmain{
+        /* border: 1px solid #D5E4F4; */
+        background:#FFF;
+        padding:5px;
+        margin:0px;
+        /* padding-bottom:20px; */
+        }
+        #submit h2{
+        font:15px Verdana;
+        color:#4f98ca;
+            border-top:1px solid #EBF5FE;
+            border-bottom:1px solid #EBF5FE;
+            background:#F4FAFF;
+            padding:3px;
+            font-weight: lighter;
+            height:20px;
+        }
+        #submit h2{
+        margin-bottom:20px;
+        }
+        .add-form-div{
+            font-size: 20px;
+            margin: 7px 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #add-form-textarea{
+            font-size: 20px;
+            margin: 5px 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: baseline;
+        }
+        #add-form-explain{
+            display: flex;
+            text-align: right;
+            font-size: 12px;
+            color: #6c5b7c;
+        }
+        #add-form-more{
+            font-size: 15px;
+            visibility: hidden;
+        }
+        #ifqqh{
+            display: block;
+            cursor: pointer;
+            width: 20px;
+            padding: 3px 0;
+            border: 2px;
+            height: 20px;
+            background: rgba(240, 84, 77, 0.5);
+        }
+        label{
+            color: #000000;
+            font-size: 19px;
+            text-align:right;
+            /* margin-left:28px; */
+            /* float: left; */
+            padding:0 7px 0 0;
+            width: 100px;
+            }
+
+        input {
+        font:16px Verdana;
+        width: 250px;
+        padding: 7px;
+        border: 2px;
+        margin-right: 25px;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        textarea {
+        font:14px Verdana;
+        resize: none;
+        padding:7px;
+        border: 2px;
+        border-radius: 5px;
+        width: 250px;
+        height: 120px;
+        overflow-y:visible;
+        margin-right: 25px;
+        background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        #sbutton{
+        margin-top: 5px;
+        width: 100px;
+        background-color: rgba(255, 255, 255, 0.4);
+        }
+
+    }/*@media的结尾括号*/

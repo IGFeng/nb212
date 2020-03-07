@@ -6,6 +6,8 @@
 <style>
     html,body{
         background-image: linear-gradient(120deg, #f6d365 0%, #fd7167 100%);
+        background-size:100% 100%;
+        background-attachment: fixed;
     }
 </style>
 @endsection

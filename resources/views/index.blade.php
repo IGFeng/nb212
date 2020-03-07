@@ -66,7 +66,7 @@
 </div><!--listmain结束-->
 </div><!--list结束-->
 <div class="paginate">
-{{$messages->render()}}
+{{$messages->links()}}
 </div>
 <!--最外层主要区域结束-->
 </div>

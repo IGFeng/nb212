@@ -1,3 +1,4 @@
+@media screen and (min-width:960px) {
 * {
     margin:0;
     padding:0;
@@ -417,42 +418,4 @@
         background-image: linear-gradient(to right, #F2EDEB 0%,#c0c8c9 50%,#F0E9F0 100%);
     }
 
-    /*打字机动画*/
-    @keyframes typeWord
-    {
-       from{width: 0px;}
-    }
-
-    #typeWord
-    {
-        color: snow;
-        animation: typeWord 5s steps(50,end)  infinite ;
-        width: 760px;
-        position: absolute;
-        bottom: 60px;
-        border-right: 2px solid black;
-        overflow: hidden;
-        white-space:nowrap;
-    }
-
-    @keyframes myMove
-	{
-		 0% {
-			background-position: 0% 0%; }
-			50% {
-			background-position: 50% 100%; }
-			100% {
-			 background-position: 100% 0%; }
-	}
-
-/*字体动态颜色*/
-    #text-title
-    {
-        animation:myMove 3s linear infinite;
-        background-image: linear-gradient(90deg, #f18686, #78aaf5, #a8804f, #ff9e4f);
-        -webkit-background-clip: text;
-        background-size:300% 100%;
-        -webkit-text-fill-color: transparent;
-
-
-    }
+}

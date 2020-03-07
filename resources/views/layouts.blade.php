@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title','留言板')</title>
-    <link rel="stylesheet" href="{{asset('css.css')}}">
+    <link rel="stylesheet" href="{{asset('css.css')}}" media="screen and (min-width:960px)">
+    <link rel="stylesheet" href="{{asset('css-phone.css')}}" media="screen and (max-width:960px)">
     @section('style')
     @show
 </head>
