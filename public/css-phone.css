@@ -29,8 +29,27 @@
         a{
             text-decoration: none;
         }
+        .pagination{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+        }
+        .pagination li{
+            list-style-type: none;
+            display: inline;
+            padding:5px;
+            color:red;
+        }
 
-
+        #information ul{
+            display:table;
+            margin:0 auto;
+           text-align: center;
+        }
+        #information li{
+            color:red;
+        }
         #top{
             display: flex;
             flex-flow: column wrap;

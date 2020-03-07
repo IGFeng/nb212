@@ -114,6 +114,21 @@
                font-weight: lighter;
                color: #000000a8;
            }
+        @media screen and (max-width:960px)  {
+        .links {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-content: center ;
+        }
+        .links > a {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .title {
+            font-size: 70px;
+        }
+        }
         </style>
     </head>
     <body>
