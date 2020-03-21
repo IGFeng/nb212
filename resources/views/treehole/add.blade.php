@@ -20,7 +20,7 @@
         <div id="submit">
         <form name="form1" method="post" action="{{url('addsolve')}}">
             @csrf
-        <div class="add-form-div"><label for="username">昵称:</label><input type="text" name="message[nickname]"  value="{{Session::get('nickname')}}"></div>
+        <div class="add-form-div"><label for="username">昵称:</label><input type="text" name="message[nickname]"  value="{{Session::get('nickname')}}" disabled="disabled"></div>
         <div id="add-form-textarea"><label for="content">内容:</label><textarea id="content" name="message[content]" cols="70" rows="9" placeholder='"我喝过很烈的酒，也放过不该放的手，从前不会回头，往后不会将就。"'>{{old('message')['content']}}</textarea></div>
         <div class='error'>{{$errors->first('message.content')}}</div>
         </div>

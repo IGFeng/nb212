@@ -146,7 +146,7 @@ class TreeholeController extends Controller{
         }
         $data=$request->input('message');
         $Message=new thmessage();
-        $Message->nickname=$data['nickname'];
+        $Message->nickname=session('nickname');
         $Message->content=$data['content'];
         $Message->systime=date("Y-m-d H:i",time());
         $Message->account=session('account');
