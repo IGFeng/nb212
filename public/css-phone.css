@@ -24,7 +24,7 @@
             justify-content: center;
             align-items: center;
             align-content: center;
-            margin: 0;
+            margin: 0 ;
             padding: 0;
         }
         a{
@@ -81,25 +81,15 @@
                 padding: 0;
         }/*没有搬运li的样式*/
         #foot {
-            position: absolute;
+            position: fixed;
             bottom: 0;
             margin: 0;
-            padding: 0 0 15px 0;
+            padding: 0 ;
             text-align:center;
             }
 
 
-        #list{
-            display: flex;
-            flex-direction: column wrap;
-            justify-content: center;
-            align-content: space-around;
-            margin: 40px 5px 30px 5px;
-            padding: 15px 10px;
-            background-color: #FFF;
-            border-radius: 10px;
-            box-shadow: 0 0 10px 0 rgba(0,0,0,.08);
-        }/*没有搬运listmain的样式*/
+
 
         #listmain h2{
                 display: flex;
@@ -167,16 +157,18 @@
         /* lzx */
         #list{
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: column wrap;
+            justify-content: center;
             align-content: space-around;
-        padding:13px 13px 3px 13px;
-        /* background-color: #F0F8FF; */
-        background-color: #FFF;
-        border-radius: 15px;
-        box-shadow: 0 0 14px 0 rgba(0,0,0,.08);
-        }
+            padding: 15px 10px;
+            background-color: #FFF;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,.08);
+            position: absolute;
+            top:35px;
+            left:0;
+            right:0;
+        }/*没有搬运listmain的样式*/
 
         #submit img{
         margin-left:8px;

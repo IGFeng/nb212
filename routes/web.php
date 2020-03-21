@@ -11,7 +11,6 @@
 |
 */
 
-use App\Http\Controllers\MessageController;
 
 Route::get('/',function(){
     return view('welcome');
@@ -24,6 +23,8 @@ Route::post('create',['uses'=>'MessageController@create']);
 Route::get('trans',['uses'=>'UserController@trans']);
 Route::post('admin',['uses'=>'UserController@admin']);
 Route::get('logout',['uses'=>'UserController@logout']);
+Route::get('treehole',['uses'=>'TreeholeController@welcome']);
+
 Route::group(['middleware' => ['web']], function () {
     Route::get('index',['uses'=>'MessageController@index']);
     Route::get('verify/{id}',['uses'=>'UserController@verify']);
@@ -32,6 +33,22 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('unsettop/{id}',['uses'=>'UserController@unsettop']);
     Route::get('hide/{id}',['uses'=>'UserController@hide']);
     Route::get('reply/{id}',['uses'=>'UserController@reply']);
+    Route::get('thregister',['uses'=>'TreeholeController@register']);
+    Route::get('thlogin',['uses'=>'TreeholeController@login']);
+    Route::get('thindex',['uses'=>'TreeholeController@index']);
+    Route::post('registersolve',['uses'=>'TreeholeController@registersolve']);
+    Route::post('loginsolve',['uses'=>'TreeholeController@loginsolve']);
+    Route::get('thadd',['uses'=>'TreeholeController@thadd']);
+    Route::post('addsolve',['uses'=>'TreeholeController@addsolve']);
+    Route::get('thdelete/{id}',['uses'=>'TreeholeController@delete']);
+    Route::get('threply/{id}',['uses'=>'TreeholeController@reply']);
+    Route::post('thedit/{id}/{nickname}/{account}',['uses'=>'TreeholeController@edit']);
+    Route::get('rethdelete/{id}',['uses'=>'TreeholeController@redelete']);
+    Route::get('rethreply/{id}',['uses'=>'TreeholeController@rereply']);
+    Route::post('rethedit/{mid}/{nickname}/{account}',['uses'=>'TreeholeController@reedit']);
+    Route::get('adminlogin',['uses'=>'TreeholeController@adminlogin']);
+    Route::post('adminloginsolve',['uses'=>'TreeholeController@adminloginsolve']);
+    Route::get('adminlogout',['uses'=>'TreeholeController@adminlogout']);
 });
 
 

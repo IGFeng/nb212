@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>留言板-心系武汉</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>匿名模式</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <!-- Styles -->
         <style>
             .title{
@@ -44,7 +43,8 @@
                 height: 100vh;
                 margin: 0;
                 user-select: none;
-                background-image: url("pictures/城市.png");
+                background-image: url("pictures/206.jpg");
+                background-size: 100%;
             }
 
             .full-height {
@@ -76,7 +76,7 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: black;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -97,18 +97,6 @@
             .links div{
                 margin-bottom: 5px;
             }
-            #link-index :hover{
-                color: #16a0c4;
-            }
-            #link-add a:hover{
-                color: #ebb95e;
-            }
-            #link-login :hover{
-                color: #f27d51;
-            }
-            #link-register :hover{
-                color: #6462cc;
-            }
            footer{
                font-size: 14px;
                font-weight: lighter;
@@ -124,31 +112,29 @@
         .links > a {
             font-size: 16px;
             margin: 5px 0;
+
         }
         .title {
             font-size: 70px;
         }
         }
         </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            <div class="content">
-                <div class="title m-b-md">
-                  武汉加油
-                </div>
-
-                <div class="links">
-                    <a onmouseover="this.style.color='#16a0c4';" onmouseout="this.style.color='#636b6f'" href="{{url('index')}}">浏览留言</a>
-                    <a onmouseover="this.style.color='#ebb95e';" onmouseout="this.style.color='#636b6f'" href="{{url('add')}}">签写留言</a>
-                    <a onmouseover="this.style.color='#f27d51';" onmouseout="this.style.color='#636b6f'" href="{{url('login')}}">登陆</a>
-                    <a onmouseover="this.style.color='#6462cc';" onmouseout="this.style.color='#636b6f'" href="{{url('trans')}}">注册</a>
-                    <a onmouseover="this.style.color='red';" onmouseout="this.style.color='#636b6f'" href="{{url('treehole')}}">匿名模式</a>
-                </div>
-                <hr>
-                <p style="color:ghostwhite">Designed by 212</p>
+</head>
+<body>
+    <div class="flex-center position-ref full-height">
+        <div class="content">
+            <div class="title m-b-md">
+              心灵寄语
             </div>
+
+            <div class="links">
+                <a onmouseover="this.style.color='yellow';" onmouseout="this.style.color='black'" href="{{url('thregister')}}">注册</a>
+                <a onmouseover="this.style.color='#16a0c4';" onmouseout="this.style.color='black'" href="{{url('thlogin')}}">登陆</a>
+                <a onmouseover="this.style.color='red';" onmouseout="this.style.color='black'" href="{{url('adminlogin')}}">管理员登陆</a>
+            <hr>
+            <p style="color:ghostwhite">Designed by Feng</p>
         </div>
-        <div class="hiddendiv common"></div>
-    </body>
+    </div>
+    <div class="hiddendiv common"></div>
+</body>
 </html>
