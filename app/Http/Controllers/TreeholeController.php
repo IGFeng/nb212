@@ -47,11 +47,11 @@ class TreeholeController extends Controller{
         if($data['password']!=$data['confirm']){
             return redirect()->back()->with('confirmerror',1);
         }
-        if($data['validator']!="nnlnb"){
+        if($data['validator']!="xljy"){
             return redirect()->back()->with('validatorerror',1);
         }
         $user=new thuser();
-        if($data['validator']=="nnlnb"){
+        if($data['validator']=="xljy"){
             $user->account=$data['account'];
             $user->password=$data['password'];
             $user->nickname=$data['nickname'];
